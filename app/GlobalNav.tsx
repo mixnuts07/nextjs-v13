@@ -46,6 +46,12 @@ export default function GlobalNav() {
           </div>
         );
       })}
+      <Link
+        href="./todo"
+        className="block rounded-md px-3 py-2 text-sm font-medium text-vercel-orange"
+      >
+        GO TO TODO Page
+      </Link>
     </div>
   );
 }
