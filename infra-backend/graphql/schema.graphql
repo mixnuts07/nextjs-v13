@@ -1,0 +1,13 @@
+scalar AWSTimestamp
+# https://docs.aws.amazon.com/ja_jp/appsync/latest/devguide/scalars.html
+
+type Todo {
+  id: ID!
+  title: String!
+  completed: Boolean!
+  createdAt: AWSTimestamp!
+}
+
+type Query {
+  getTodos: [TOdo]!
+}
